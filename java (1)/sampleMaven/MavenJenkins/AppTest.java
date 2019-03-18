@@ -18,6 +18,8 @@ public class AppTest{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.google.com");
 		driver.findElement(By.xpath(".//*[@id='gb_70']")).click();
+		System.out.println("Success");
+		driver.close();
 
 }
 }
